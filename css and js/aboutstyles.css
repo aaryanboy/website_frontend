@@ -82,9 +82,6 @@ header {
   transform: translateZ(-5px) scale(1);
 }
 
-.chesspiece {
-  transform: translateZ(0px);
-}
 .background {
   position: absolute;
   height: 100%;
@@ -97,14 +94,6 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: contain;
-  z-index: -1;
-}
-
-.chesspiece {
-  position: absolute;
-  height: auto;
-  width: 105%;
   object-fit: contain;
   z-index: -1;
 }

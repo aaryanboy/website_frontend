@@ -6,7 +6,7 @@ body {
   /* background-color: whitesmoke; */
   background-image: url(/photos/aboutpagebackground.jpg);
   font-size: 12px;
-  overflow-y: hidden;
+
   overflow-x: hidden;
 }
 

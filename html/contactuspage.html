@@ -12,16 +12,218 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <style>
+      /* Resetting basic styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Header Styles */
+      .header {
+        background-color: #0077cc;
+        color: #fff;
+        padding: 20px 10px;
+        text-align: center;
+      }
+
+      /* Container */
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+      }
+
+      /* Contact Info Section */
+      .contact-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-info div {
+        flex: 1 1 300px;
+        margin: 10px;
+      }
+
+      .contact-info h2 {
+        margin-bottom: 10px;
+        color: #0077cc;
+      }
+
+      .contact-info p,
+      .contact-info a {
+        color: #333;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+
+      /* Social Media Links */
+      .social-links {
+        margin-top: 10px;
+      }
+
+      .social-links a {
+        color: #0077cc;
+        margin-right: 10px;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .social-links a:hover {
+        color: #005999;
+      }
+
+      /* Contact Form */
+      .contact-form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form h2 {
+        margin-bottom: 20px;
+        color: #0077cc;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        background-color: #0077cc;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .contact-form button:hover {
+        background-color: #005999;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #0077cc;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
-    <div class="background">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Contact Us</h1>
+
+      <button onclick="location.href='homepage.html'">
+        <i class="fa-solid fa-circle-chevron-left fa-3x"></i>
+      </button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <div>
+          <h2>Our Address</h2>
+          <p>BKT, Bhaktapur</p>
+          <p>Nepal, 654321</p>
+        </div>
+        <div>
+          <h2>Email Us</h2>
+          <p><a href="mailto:aaryanboy12@gmail.com">Main Email</a></p>
+          <p><a href="mailto:support@example.com">second@example.com</a></p>
+        </div>
+        <div>
+          <h2>Call Us</h2>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p>Fax: +1 987 654 321</p>
+        </div>
+        <div>
+          <h2>Follow Us</h2>
+          <div class="social-links">
+            <div class="buttens">
+              <a
+                href="https://www.facebook.com/aaryanboy12"
+                class="social-button social-button--facebook"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/aaryan_boy12/"
+                class="social-button social-button--instagram"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://github.com/aaryanboy"
+                class="social-button social-button--github"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; Footer info...</p>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="background">
       <div class="container">
         <div class="screen">
           <div class="screen-header">
             <button onclick="location.href='homepage.html'">
               <i class="fa-solid fa-circle-chevron-left fa-3x"></i>
             </button>
-            <!-- /*thi is header body*/ -->
+            
           </div>
           <div class="screen-body">
             <div class="screen-body-item left">
@@ -85,4 +287,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> -->
